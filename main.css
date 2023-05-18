@@ -1,0 +1,232 @@
+@font-face{
+    font-family: cooper;
+    src:url("Cooper.ttf") format('truetype');
+}
+body{
+    font-size: 25px;
+    font-family:cooper;
+    background-color: black;
+    margin: 0;
+}
+a:hover{
+    color:rgb(62, 62, 62);
+    text-shadow: 0.1em 0.1em 0.2em white;
+}
+#nav{
+    top: 25px;
+    position:relative;
+    display: -webkit-flex;
+    width: 100%;
+    height: 20px;
+    justify-content:space-around;
+    text-shadow: 0.1em 0.1em 0.2em white;
+}
+
+#street{
+    color:white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    position: relative;
+}
+#street:hover{
+    text-shadow: 0.1em 0.1em 0.2em white;
+    color: rgb(62, 62, 62);
+    transition: 1s;
+}
+#racing{
+    color:white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    position: relative;
+}
+#racing:hover{
+    text-shadow: 0.1em 0.1em 0.2em white;
+    color: rgb(62, 62, 62);
+    transition: 1s;
+}
+#collection{
+    color:white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    position: relative;
+
+}
+#collection:hover{
+    text-shadow: 0.1em 0.1em 0.2em white;
+    color: rgb(62, 62, 62);
+    transition: 1s;
+}
+#txt{
+    text-align: center;
+    border-radius: 15%;
+    font-size: 100%;
+    font-family: cooper;
+    height: 100%;
+    color:white;
+    text-shadow: -2px -2px 2px black;
+    background-color: transparent;
+    position:relative;
+    width: 30%;
+    border: 2px solid white;
+}
+#txt:focus{
+    border: 2px solid silver;
+    outline: none;
+}
+
+#start{
+    filter: invert(40%);
+    top: -10px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+#start:hover{
+    filter: invert(100%);
+    transition: 1s;
+    width: 60px;
+    height: 60px;    
+}
+
+#img{
+    overflow: hidden;
+    background-size:cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position:center;
+}
+
+@media (max-width:500px ){
+    #img {
+        transition: 0.5s;
+        animation: imgs 314s alternate infinite;}
+    #nav{font-size: 30%;}
+    a{
+        text-align: left;
+        font-size: 30%;
+        line-height: 15px;
+        top: 5px;
+        position: relative;
+        text-shadow: 0.1em 0.1em 0.2em black;
+        color:white;
+        text-decoration: none;
+        list-style: none;
+    }
+    #st{
+        display: none;
+        font-size: 33px;    
+    }
+    #col{
+        display: none;
+        font-size: 33px;
+    }
+    #race{
+        display:none;
+        font-size: 33px;
+    }
+    
+}
+   
+@keyframes imgs{
+    0%{background-image:url("Ford/fordgt40-2.jpg");}
+    20%{background-image:url("Lamborghini/centenario.jpg");}
+    30%{background-image:url("Chevrolet/camaross.jpg");}
+    40%{background-image:url("McLaren/p1-2.jpg");}
+    50%{background-image:url("Alpha/stradale-2jpg");}
+    60%{background-image:url("Aston/vantage2023-2.jpg");}
+    70%{background-image:url("Maserati/mc12-2.jpg");}
+    80%{background-image:url("Mercedes/amggt50-2.jpg");}
+    90%{background-image:url("Ford/shelbycobra-2.jpg");}
+    100%{background-image:url("Ferrari/250gto-2.jpg");}
+}
+@media(min-width:501px ){
+    #img {
+        transition: 0.5s;
+        animation: imgzz 314s alternate infinite;}
+    #nav{font-size: 75%;}
+    a{
+        text-align: left;
+        font-size: 30%;
+        line-height: 18px;
+        top: 5px;
+        position: relative;
+        text-shadow: 0.1em 0.1em 0.2em black;
+        color:white;
+        text-decoration: none;
+        list-style: none;
+    }
+    #st{
+        display: none;
+        font-size: 44px;    
+    }
+    #col{
+        display: none;
+        font-size: 44px;
+    }
+    #race{
+        display:none;
+        font-size: 44px;
+    }
+}
+    
+@keyframes imgzz{
+    0%{background-image:url("Ford/fordgt40-3.png");}
+    20%{background-image:url("Lamborghini/huracan.jpg");}
+    30%{background-image:url("Chevrolet/camaross-2.jpg");}
+    40%{background-image:url("McLaren/p1-4.jpg");}
+    50%{background-image:url("Alpha/stradale-3.jpg");}
+    60%{background-image:url("Aston/vantage2023-3.jpg");}
+    70%{background-image:url("Maserati/mc12-3.jpg");}
+    80%{background-image:url("Mercedes/amggt50-3.jpg");}
+    90%{background-image:url("Ford/shelbycobra-3.jpg");}
+    100%{background-image:url("Ferrari/250gto-3.jpg");}
+}
+@media (min-width:900px){
+    #nav{font-size: 100%;}
+    #img {
+        transition: 0.5s;
+        animation: img 314s alternate infinite;
+    }
+    #st{
+        position: relative;
+        left:-20%;
+        display:none;
+ 
+    }
+    #col{
+        display:none;
+
+    }
+    #race{
+        position: relative;
+        left:-13%;
+        display:none;
+   
+    }
+    a{  
+        text-align: center;
+        font-size: 40%;
+        line-height: 25px;
+        top: 5px;
+        position: relative;
+        text-shadow: 0.1em 0.1em 0.2em black;
+        color:white;
+        text-decoration: none;
+        list-style: none;
+    }
+   
+}
+@keyframes img{
+    0%{background-image:url("Ford/fordgt40.jpg");}
+    20%{background-image:url("Lamborghini/aventador.jpg");
+        background-position:bottom;}
+    30%{background-image:url("Chevrolet/camaro396");}
+    40%{background-image:url("McLaren/p1.jpg");}
+    50%{background-image:url("Alpha/33.jpg");}
+    60%{background-image:url("Aston/vantage2023");}
+    70%{background-image:url("Maserati/mc12.jpg");}
+    80%{background-image:url("Mercedes/amggt.jpg");
+        background-position: top;}
+    90%{background-image:url("Ford/shelbycobra");}
+    100%{background-image:url("Ferrari/250gto");}
+}
+
+
