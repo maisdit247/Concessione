@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chevrolet.css">
+    <title> Chevrolet </title>
+    <script type="text/javascript">
+        function marque(){
+            var div = document.getElementById("princ")
+            var mod = document.getElementById("video")
+            var log = document.getElementById("logo")
+            
+            if (div.style.display == "block"){
+                    div.style.display = "none";
+                    mod.style.height="100%";
+                    mod.style.width="100%";
+                    mod.style.transition="1s";
+                    log.style.top="10px"
+                    
+            }else{
+                    div.style.display = "block";
+                    mod.style.height="90%";
+                    mod.style.width="100%";
+                    mod.style.transition="1s";
+                    log.style.top="100px"
+                    
+                }
+        }
+        function c8(){
+            var div=document.getElementById("imgc8")
+            if (div.style.display == "block"){
+                    div.style.display = "none";
+                    div.style.transition="1s";
+                    
+            }else{
+                    div.style.display = "block";
+                    div.style.transition="1s";
+                }
+        }
+
+
+        
+        function zl1(){
+            var div=document.getElementById("imgzl1")
+            if (div.style.display == "block"){
+                    div.style.display = "none";
+                    div.style.transition="1s";
+                    
+            }else{
+                    div.style.display = "block";
+                    div.style.transition="1s";
+                }
+        }
+    </script>
+</head>
+<body>
+    <div id="background">
+        <video  id="video"type="video/mp4" autoplay loop muted >
+            <source src="chevrolet.mp4">
+        </video> 
+    </div>
+    <img id="logo" src="logo" alt="" onclick="marque()">
+    <div id="princ">
+            <a href="zl1.html" id="zl1" onmouseout="zl1()" onmouseover="zl1()">Camaro ZL-1</a>
+            <a href="corvettec8.html" id="c8" onmouseout="c8()" onmouseover="c8()">Corvette C8</a>
+    </div>
+    <div id="imgs">
+        <img id="imgzl1">
+        <img id="imgc8">
+
+    </div>
+    
+</body>
+</html>
